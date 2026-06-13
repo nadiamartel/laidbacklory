@@ -1,0 +1,772 @@
+/* ============================================================
+   LAIDBACK LORY — style.css
+   ============================================================ */
+
+
+
+
+/* ████████████████████████████████████████████████████████████
+   ✏️  ZONA DE EDICIÓN FÁCIL — TIPOGRAFÍAS
+   Aquí podés cambiar cada fuente por separado sin tocar nada más.
+   Para cambiar una fuente: reemplazá el nombre entre comillas.
+   Ejemplo: 'DM Sans' → 'Georgia' o cualquier fuente de Google Fonts.
+   ████████████████████████████████████████████████████████████ */
+
+:root {
+
+  /* ── Fuentes ─────────────────────────────────────────────── */
+
+  /* Fuente del CUERPO — texto general de la página */
+  --font-body: 'Averia Libre', sans-serif;
+
+  /* Fuente del LOGO en la barra de navegación */
+  --font-nav-logo: 'Averia Libre', serif;
+
+  /* Fuente del TÍTULO PRINCIPAL H1 (sección Hero) */
+  --font-h1: 'Averia Libre', serif;
+
+  /* Fuente de los TÍTULOS DE SECCIÓN H2 (About, Music, Videos, etc.) */
+  --font-h2: 'Averia Libre', serif;
+
+  /* Fuente de los TÍTULOS DE TARJETA H3 (Weddings, Festivals, etc.) */
+  --font-h3: 'Averia Libre', serif;
+
+  /* Fuente de los TÍTULOS DE TRACK en la sección Music */
+  --font-track-title: 'Averia Libre', serif;
+
+  /* Fuente de los TÍTULOS DE VIDEO en la sección Videos */
+  --font-video-title: 'Averia Libre', serif;
+
+  /* Fuente del NOMBRE DE GÉNERO en la sección Repertoire */
+  --font-genre-name: 'Averia Libre', serif;
+
+  /* ── Tamaños de fuente ───────────────────────────────────── */
+
+  /* Tamaño del TÍTULO PRINCIPAL H1 — usa clamp(mínimo, escalable, máximo) */
+  --size-h1: clamp(3rem, 6vw, 6.5rem);
+
+  /* Tamaño de los TÍTULOS DE SECCIÓN H2 */
+  --size-h2: clamp(2rem, 4vw, 3rem);
+
+  /* Tamaño de los TÍTULOS DE TARJETA H3 (servicios) */
+  --size-h3: 1.25rem;
+
+  /* Tamaño del LOGO en la navegación */
+  --size-nav-logo: 1.2rem;
+
+  /* Tamaño de los LINKS de navegación */
+  --size-nav-links: 0.78rem;
+
+  /* Tamaño del SUBTÍTULO del Hero ("Austrian Indie / Folk Soul") */
+  --size-hero-tag: 0.7rem;
+
+  /* Tamaño de la ETIQUETA de sección (ej: "Discography", "The Artist") */
+  --size-section-label: 0.7rem;
+
+  /* Tamaño del texto de las TARJETAS de servicios */
+  --size-card-text: 0.92rem;
+
+}
+
+
+
+
+/* ████████████████████████████████████████████████████████████
+   🖼️  ZONA DE EDICIÓN FÁCIL — IMÁGENES Y MULTIMEDIA
+   Aquí podés cambiar el tamaño de cada imagen/video por separado.
+   ████████████████████████████████████████████████████████████ */
+
+:root {
+
+  /* ── FOTO DE PORTADA (Hero) ──────────────────────────────── */
+  /* Ruta de la imagen de fondo del Hero */
+  /* Para cambiarla: reemplazá la URL entre comillas */
+  --hero-bg-image: url(./img/PSX_20251005_213804.jpg);
+
+  /* ── FOTO DE ABOUT ───────────────────────────────────────── */
+  /* Ancho de la foto en la sección About (escritorio) */
+  --about-img-width-desktop: 440px;
+  /* Alto de la foto en la sección About (escritorio) */
+  --about-img-height-desktop: 600px;
+  /* Ancho de la foto en la sección About (móvil) */
+  --about-img-width-mobile: 100%;
+  /* Alto de la foto en la sección About (móvil) */
+  --about-img-height-mobile: 420px;
+
+  /* ── FOTOS DEL CARRUSEL ──────────────────────────────────── */
+  /* Ancho de cada foto en el carrusel (escritorio) */
+  --carousel-item-width: 340px;
+  /* Alto de cada foto en el carrusel (escritorio) */
+  --carousel-item-height: 220px;
+  /* Ancho de cada foto en el carrusel (móvil) */
+  --carousel-item-width-mobile: 270px;
+  /* Alto de cada foto en el carrusel (móvil) */
+  --carousel-item-height-mobile: 175px;
+
+  /* ── VIDEOS (YouTube) ────────────────────────────────────── */
+  /* Los videos usan proporción 16:9 automática — se adaptan al contenedor */
+  /* Ancho mínimo de cada columna de video */
+  --video-col-min-width: 320px;
+
+  /* ── MÚSICA (Spotify embeds) ─────────────────────────────── */
+  /* Ancho mínimo de cada columna de música */
+  --music-col-min-width: 280px;
+
+}
+
+
+
+
+/* ============================================================
+   1. COLORES Y VARIABLES DE DISEÑO
+   ============================================================ */
+:root {
+  --cream:        #f6f1e7;
+  --sand:         #e6dccb;
+  --mustard:      #c49a3a;
+  --mustard-soft: #d8b25c;
+  --lavender:     #8f87a8;
+  --ice-blue:     #b7cad6;
+  --pine:         #5d6b63;
+  --text-dark:    #2f2a24;
+  --text-soft:    #5c564e;
+  --section-bg:   #efe7da;
+  --section-alt:  #e7dfd2;
+  --card-bg:      rgba(255,255,255,0.45);
+}
+
+
+/* ============================================================
+   2. RESET GENERAL
+   ============================================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: linear-gradient(180deg, #f6f1e7 0%, #e9dfd0 40%, #d9d7dc 100%);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+a         { color: var(--text-soft); text-decoration: none; }
+a:visited { color: var(--text-soft); }
+a:hover   { color: var(--mustard); }
+img, iframe { max-width: 100%; }
+
+
+/* ============================================================
+   3. NAVEGACIÓN
+   ============================================================ */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 3rem;
+  background: rgba(246,241,231,0.82);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.nav-logo {
+  color: var(--text-dark);
+  font-family: var(--font-nav-logo);
+  font-size: var(--size-nav-logo);
+  letter-spacing: 0.08em;
+}
+.nav-right  { display: flex; align-items: center; gap: 2rem; }
+.nav-links  { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  font-size: var(--size-nav-links);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.nav-links a:hover { color: var(--mustard); }
+
+#languageSwitcher {
+  background: rgba(255,255,255,0.6);
+  color: var(--text-dark);
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+/* ── Hamburguesa — oculta en desktop ── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+  z-index: 1100;
+}
+.nav-hamburger span {
+  display: block;
+  height: 2px;
+  background: var(--text-dark);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+
+/* ============================================================
+   4. HERO
+   ============================================================ */
+#hero {
+  background:
+    linear-gradient(to bottom, rgba(246,241,231,0.25), rgba(246,241,231,0.88)),
+    var(--hero-bg-image) center top/cover no-repeat;
+  /* altura y layout controlados desde index.html */
+}
+.hero-content {
+  max-width: 700px;
+  animation: fadeUp 1s ease;
+}
+.hero-tag {
+  color:var(--text-soft);
+  letter-spacing: 0.25em;
+ /* font-size: var(--size-hero-tag);¨*/
+  font-size:x-large;
+  margin-bottom: 1rem;
+  display: block;
+}
+h1 {
+  font-family: var(--font-h1);
+  font-size: var(--size-h1);
+  line-height: 0.95;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+h1 em { color: var(--mustard); font-style: italic; }
+.hero-sub {
+  font-size: large;
+  max-width: 520px;
+  line-height: 1.7;
+  color: var(--text-soft);
+  margin-bottom: 2rem;
+}
+.hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+
+/* ============================================================
+   5. BOTONES
+   ============================================================ */
+.btn {
+  padding: 0.9rem 1.8rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  transition: 0.25s;
+  display: inline-block;
+}
+.btn-primary       { background: var(--mustard); color: white; }
+.btn-primary:hover { background: var(--lavender); color: white; }
+.btn-outline       { border: 1px solid rgba(0,0,0,0.1); color: var(--text-dark); background: rgba(255,255,255,0.25); }
+.btn-outline:hover { background: rgba(255,255,255,0.5); }
+
+
+/* ============================================================
+   6. BASE DE SECCIONES
+   ============================================================ */
+section { padding: 4rem 3rem; }
+
+.section-label {
+  color: var(--mustard);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: var(--size-section-label);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+p.section-label {
+  font-size: var(--size-section-label);
+  color: var(--mustard);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-bottom: 0.8rem;
+  line-height: 1;
+} 
+h2 {
+  font-family: var(--font-h2);
+  font-size: var(--size-h2);
+  margin-bottom: 1rem;
+}
+h2 em { color: var(--mustard); font-style: italic; }
+.divider {
+  width: 40px;
+  height: 2px;
+  background: var(--mustard);
+  margin-bottom: 2rem;
+}
+
+
+/* ============================================================
+   7. MUSIC
+   ============================================================ */
+#music { background: var(--section-bg); }
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.track-card {
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(0,0,0,0.06);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+.track-card:hover { transform: translateY(-4px); }
+.track-card iframe { width: 100% !important; height: 152px; }
+.track-info  {
+  padding: 0.9rem 1rem;
+}
+.track-title {
+  font-family: var(--font-track-title);
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.track-meta  { font-size: 0.75rem; color: var(--text-soft); }
+
+
+/* ============================================================
+   8. VIDEOS
+   ============================================================ */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--video-col-min-width), 1fr));
+  gap: 1.5rem;
+}
+.video-card {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid rgba(0,0,0,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.25s;
+}
+.video-card:hover  { transform: translateY(-4px); }
+.video-card iframe { width: 100%; aspect-ratio: 16/9; border: none; }
+.video-caption     { padding: 1rem; }
+.video-title       {
+  font-family: var(--font-video-title);
+}
+
+
+/* ============================================================
+   9. ABOUT
+   ============================================================ */
+#about { background: var(--section-alt); }
+
+.about-inner {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 960px;
+}
+.about-img {
+  width: var(--about-img-width-desktop);
+  height: var(--about-img-height-desktop);
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: block;
+}
+.about-text p {
+  font-size:large;
+  line-height: 1.75;
+  color: var(--text-soft);
+  margin-bottom: 1rem;
+}
+.about-text { flex: 1; }
+.about-text h2 {
+  color: var(--text-dark);
+  font-family: var(--font-h2);
+  font-size: var(--size-h2);
+  font-weight: normal;
+}
+
+
+/* ============================================================
+   10. CARRUSEL DE FOTOS
+   ============================================================ */
+#galeria {
+  background: var(--section-bg);
+  padding: 5rem 0;
+  overflow: hidden;
+}
+.galeria-header {
+  padding: 0 3rem 2.5rem;
+}
+@media (max-width: 768px) {
+  .galeria-header { padding: 0 1.2rem 2rem; }
+}
+.carousel-wrap {
+  position: relative;
+  -webkit-mask: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
+          mask: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
+}
+.carousel-track {
+  display: flex;
+  gap: 1.2rem;
+  width: max-content;
+  animation: c-scroll 22s linear infinite;
+}
+.carousel-track:hover  { animation-play-state: paused; }
+.carousel-track.paused { animation-play-state: paused; }
+
+/* ── Botones ❮ ❯ del carrusel ── */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(196,154,58,0.5);
+  background: rgba(246,241,231,0.82);
+  backdrop-filter: blur(8px);
+  color: var(--mustard);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.carousel-btn:hover {
+  background: var(--mustard);
+  border-color: var(--mustard);
+  color: var(--cream);
+  transform: translateY(-50%) scale(1.08);
+}
+.carousel-btn.prev { left: 0.6rem; }
+.carousel-btn.next { right: 0.6rem; }
+
+@keyframes c-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.c-item {
+  width: var(--carousel-item-width);
+  height: var(--carousel-item-height);
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.c-item:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
+.c-item img   { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+.c-item:hover img { transform: scale(1.05); }
+.c-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(46,40,30,0.55) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity 0.35s;
+  display: flex; align-items: flex-end;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+}
+.c-item:hover .c-overlay { opacity: 1; }
+.c-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream);
+  font-family: var(--font-body);
+}
+
+
+/* ============================================================
+   11. SERVICIOS / LIVE
+   ============================================================ */
+#servicios { background: var(--section-alt); }
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.s-card {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid rgba(0,0,0,0.06);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 2.2rem 2rem;
+  transition: transform 0.25s, box-shadow 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+.s-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--mustard), var(--mustard-soft), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.s-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+.s-card:hover::before { transform: scaleX(1); }
+.s-card h3 {
+  font-family: var(--font-h3);
+  font-size: var(--size-h3);
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+.s-card p { font-size: var(--size-card-text); color: var(--text-soft); line-height: 1.75; }
+
+
+/* ============================================================
+   12. REPERTORIO
+   ============================================================ */
+#repertorio { background: var(--section-bg); }
+
+.rep-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  align-items: start;
+  margin-top: 2.5rem;
+}
+.rep-sticky { position: sticky; top: 6rem; }
+.rep-sticky p { font-size: 1rem; color: var(--text-soft); line-height: 1.85; margin-bottom: 0; }
+.rep-sticky .section-label { color: var(--mustard); }
+.rep-sticky h2 {
+  font-family: var(--font-h2);
+  font-size: var(--size-h2);
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+.rep-note {
+  padding: 1.4rem 1.6rem;
+  background: rgba(196,154,58,0.07);
+  border-left: 3px solid var(--mustard-soft);
+  border-radius: 0 8px 8px 0;
+  font-style: italic; font-size: 0.95rem;
+  color: var(--text-soft); line-height: 1.75;
+  margin-bottom: 1.8rem;
+}
+.genero-list { display: flex; flex-direction: column; }
+.genero-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  transition: padding-left 0.3s ease;
+  cursor: default;
+}
+.genero-row:hover { padding-left: 0.6rem; }
+.genero-name {
+  font-family: var(--font-genre-name);
+  font-size: 1.25rem; font-style: italic;
+  color: var(--text-dark); transition: color 0.25s;
+}
+.genero-row:hover .genero-name { color: var(--mustard); }
+.genero-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end; }
+.g-tag {
+  font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--text-soft);
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 20px; padding: 0.22rem 0.6rem;
+  transition: all 0.25s;
+}
+.genero-row:hover .g-tag { border-color: rgba(196,154,58,0.35); color: var(--mustard); background: rgba(196,154,58,0.06); }
+
+
+/* ============================================================
+   12b. REP PILLARS
+   ============================================================ */
+.rep-pillars {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.8rem;
+  gap: 0;
+}
+.rep-pillar {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  transition: padding-left 0.3s ease;
+}
+.rep-pillar:first-child { border-top: 1px solid rgba(0,0,0,0.07); }
+.rep-pillar:hover { padding-left: 0.4rem; }
+.rep-pillar-title {
+  font-family: var(--font-genre-name);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mustard);
+  margin-bottom: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.rep-pillar-icon {
+  color: var(--mustard-soft);
+  font-size: 0.9rem;
+  line-height: 1;
+  transition: color 0.25s;
+}
+.rep-pillar:hover .rep-pillar-icon { color: var(--mustard); }
+.rep-pillar-text {
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* ============================================================
+   13. CONTACT
+   ============================================================ */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+
+/* ============================================================
+   14. FOOTER
+   ============================================================ */
+footer {
+  padding: 2rem;
+  background: rgba(255,255,255,0.4);
+  text-align: center;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+footer p { color: var(--text-soft); font-size: 0.75rem; }
+
+
+/* ============================================================
+   15. ANIMACIONES
+   ============================================================ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.rv {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.rv.v       { opacity: 1; transform: none; }
+.rv-d1      { transition-delay: 0.1s; }
+.rv-d2      { transition-delay: 0.2s; }
+.rv-d3      { transition-delay: 0.3s; }
+
+
+/* ============================================================
+   16. RESPONSIVE / MOBILE
+   ============================================================ */
+@media (max-width: 900px) {
+  .rep-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .rep-sticky { position: static; }
+}
+
+@media (max-width: 768px) {
+
+  /* ── Nav ── */
+  nav {
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 100vh;
+    background: rgba(246,241,231,0.97);
+    backdrop-filter: blur(16px);
+    padding: 5rem 2rem 2rem;
+    z-index: 1050;
+    overflow-y: auto;
+  }
+  .nav-right.open { display: flex; }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+  .nav-links li { border-bottom: 1px solid rgba(0,0,0,0.06); }
+  .nav-links a {
+    display: block;
+    padding: 1.1rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+  }
+
+  #languageSwitcher {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-hamburger {
+    display: flex;
+    position: relative;
+    z-index: 1100;
+  }
+
+  /* ── Ajustes generales mobile ── */
+  section      { padding: 3rem 1.2rem; }
+  .hero-ctas   { justify-content: center; }
+  .music-grid  { grid-template-columns: 1fr; }
+  .videos-grid { grid-template-columns: 1fr; }
+  .about-inner { flex-direction: column; align-items: flex-start; }
+  .about-text  { order: 1; }   /* texto primero en mobile */
+  .about-img   { order: 2; }   /* foto después en mobile */
+
+  /* Imagen About en móvil — usa las variables definidas arriba */
+  .about-img {
+    width: var(--about-img-width-mobile);
+    height: var(--about-img-height-mobile);
+    align-self: center;
+  }
+
+  /* Texto About en móvil — reducido respecto al desktop */
+  .about-text p              { font-size: 0.92rem; line-height: 1.75; }
+  .about-text h2             { font-size: clamp(1.6rem, 6vw, 2.2rem); text-align: left; }
+  .about-text .section-label { font-size: var(--size-section-label); color: var(--mustard); text-align: left; display: block; }
+  .about-text .divider       { margin-left: 0; }
+
+  .btn         { width: 100%; text-align: center; }
+  .servicios-grid { grid-template-columns: 1fr; }
+
+  /* Fotos del carrusel en móvil — usa las variables definidas arriba */
+  .c-item {
+    width: var(--carousel-item-width-mobile);
+    height: var(--carousel-item-height-mobile);
+  }
+}

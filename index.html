@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./img/favicon.png">
+
+  <!-- ═══════════════════════════════════════════════════
+       SEO — Title & Description
+       Palabras clave prioritarias: Livemusiker Tirol,
+       Hochzeitsmusiker, Alleinunterhalter, Singer Songwriter
+  ═══════════════════════════════════════════════════ -->
+  <title>Laidback Lory — Livemusiker &amp; Singer Songwriter aus Tirol | Hochzeiten &amp; Events</title>
+  <meta name="description" content="Livemusiker und Singer-Songwriter aus Tirol. Indie, Folk &amp; Akustikgitarre für Hochzeiten, Firmenfeiern, Festivals und Privatfeiern in Österreich. Jetzt Auftritt anfragen!">
+  <meta name="robots" content="index, follow">
+
+  <!-- ═══════════════════════════════════════════════════
+       hreflang — indica a Google los 3 idiomas del sitio
+  ═══════════════════════════════════════════════════ -->
+  <link rel="alternate" hreflang="de" href="https://www.laidbacklory.com/">
+  <link rel="alternate" hreflang="en" href="https://www.laidbacklory.com/?lang=en">
+  <link rel="alternate" hreflang="es" href="https://www.laidbacklory.com/?lang=es">
+  <link rel="alternate" hreflang="x-default" href="https://www.laidbacklory.com/">
+
+  <!-- ═══════════════════════════════════════════════════
+       Open Graph (redes sociales)
+  ═══════════════════════════════════════════════════ -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://www.laidbacklory.com/">
+  <meta property="og:title"       content="Laidback Lory — Livemusiker aus Tirol | Hochzeiten &amp; Events">
+  <meta property="og:description" content="Livemusiker und Singer-Songwriter aus Tirol. Indie, Folk &amp; Akustikgitarre für Hochzeiten, Firmenfeiern und Festivals in Österreich.">
+  <meta property="og:image"       content="https://www.laidbacklory.com/img/og-image.jpg">
+  <meta property="og:locale"      content="de_AT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Laidback Lory — Livemusiker aus Tirol">
+  <meta name="twitter:description" content="Indie, Folk &amp; Akustikgitarre für Hochzeiten und Events in Tirol &amp; Österreich.">
+  <meta name="twitter:image"       content="https://www.laidbacklory.com/img/og-image.jpg">
+  <link rel="canonical" href="https://www.laidbacklory.com/">
+
+  <!-- ═══════════════════════════════════════════════════
+       Schema.org — MusicGroup (datos estructurados)
+       Ayuda a Google a entender quién es, qué hace y dónde
+  ═══════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "Laidback Lory",
+    "url": "https://www.laidbacklory.com",
+    "description": "Livemusiker und Singer-Songwriter aus Tirol, Österreich. Indie, Folk, Pop und Akustikgitarre für Hochzeiten, Firmenfeiern, Festivals und Privatfeiern.",
+    "genre": ["Folk", "Indie", "Pop", "Rock", "Acoustic", "Singer-Songwriter"],
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Tirol" },
+      { "@type": "Country", "name": "Österreich" },
+      { "@type": "Country", "name": "Austria" }
+    ],
+    "knowsLanguage": ["de", "en", "es"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+43-000-000-000",
+      "contactType": "bookings",
+      "availableLanguage": ["German", "English", "Spanish"]
+    },
+    "sameAs": [
+      "https://www.instagram.com/laidbacklory",
+      "https://open.spotify.com/artist/laidbacklory",
+      "https://www.youtube.com/@laidbacklory"
+    ],
+    "performer": {
+      "@type": "Person",
+      "name": "Lorenz",
+      "jobTitle": "Livemusiker & Singer-Songwriter",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Tirol",
+        "addressCountry": "AT"
+      }
+    }
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Londrina+Solid:wght@100;300;400;900&family=Potta+One&family=Titan+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Caprasimo&family=Londrina+Solid:wght@100;300;400;900&family=Potta+One&family=Titan+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ─────────────────────────────────────────────────────────
+       Estilos de layout del Hero y About.
+       Los tamaños de imagen y fuentes se controlan desde style.css
+       en la sección "ZONA DE EDICIÓN FÁCIL" al principio del archivo.
+    ───────────────────────────────────────────────────────── */
+    #hero {
+      height: calc(100vh - 160px) !important;
+      min-height: 500px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      padding: 9rem 4rem 4rem !important;
+      box-sizing: border-box !important;
+    }
+    #hero h1 {
+      line-height: 1.0;
+      margin-bottom: 1rem;
+    }
+    #hero .hero-sub {
+      margin-bottom: 1.8rem;
+      max-width: 520px;
+    }
+    #about {
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    #about .about-inner {
+      gap: 2.5rem;
+      max-width: 960px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 768px) {
+      #hero {
+        height: auto !important;
+        min-height: 55vh !important;
+        padding: 6rem 1.5rem 3rem !important;
+        align-items: flex-start !important;
+      }
+      #hero .hero-sub { max-width: 100%; }
+      .hero-ctas { justify-content: center; }
+      #about .about-inner {
+        flex-direction: column;
+        text-align: left;
+        gap: 1rem;
+      }
+      #about .about-text .section-label,
+      #about .about-text h2 {
+        text-align: left;
+        color: var(--text-dark);
+      }
+      #about .about-text .section-label {
+        color: #c49a3a; /* --mustard */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#hero" class="nav-logo">Laidback Lory</a>
+
+    <!-- Botón hamburguesa — solo visible en mobile (CSS lo muestra) -->
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-right" id="navRight">
+      <ul class="nav-links">
+         <li><a href="#about"     data-i18n="about">About</a></li>
+        <li><a href="#music"     data-i18n="music">Music</a></li>
+        <li><a href="#videos"    data-i18n="videos">Videos</a></li>
+        <li><a href="#galeria"   data-i18n="navMoments">Moments</a></li>
+        <li><a href="#servicios" data-i18n="navLive">Live</a></li>
+        <li><a href="#contact"   data-i18n="contact">Connect</a></li>
+      </ul>
+      <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="de">German</option>
+      </select>
+    </div>
+  </nav>
+
+
+  <!-- HERO — mitad superior de la pantalla -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-tag" data-i18n="heroTag">Austrian Indie / Folk Soul</p>
+      <h1>Laidback<br>Lory</h1>
+      <p class="hero-sub" data-i18n="heroSub">
+        Livemusiker und Songwriter aus Tirol
+Echte Musik, echte Energie, echte Begegnungen
+      </p>
+      <div class="hero-ctas">
+        <a href="#music"   class="btn btn-primary" data-i18n="listen">Jetzt anhören</a>
+        <a href="#contact" class="btn btn-outline"  data-i18n="bookShow">Auftritt buchen</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ABOUT — mitad inferior de la pantalla, visible sin scroll -->
+  <section id="about">
+    <div class="about-inner">
+      <img class="about-img" src="./img/Laidback_Lory-about.jpg" alt="Laidback Lory — Livemusiker und Singer-Songwriter aus Tirol, Österreich">
+      <div class="about-text">
+        <p class="section-label" data-i18n="artist">Der Kunstler</p>
+        <h2 data-i18n="aboutTitle">Über mich</h2>
+        <div class="divider"></div>
+        <p data-i18n="about1">
+        Ich bin Lorenz – Livemusiker und Songwriter aus Tirol. Musik begleitet mich schon seit frühster Kindheit. Durch Jahre in verschiedensten Bands und Musikprojekten habe ich gelernt, dass echte Emotionen in dem Moment entstehen, wenn Künstler und Publikum sich begegnen.<br>Durch die Musik drücke ich meine Erfahrungen und das Lebensgefühl vom Reisen aus, das von interessanten Begegnungen und Eindrücken geprägt ist.<br>Musik lebt meiner Meinung nach nämlich von Authentizität und der unmittelbaren Energie.<br>Für verschiedenste Feiern und Events passe ich mein Set flexibel an die Atmosphäre vor Ort an.
+      </p>
+        <!-- <p data-i18n="about2" style="margin-top:0.4rem;">
+          Her music travels between quiet acoustic moments
+          and atmospheric electronic soundscapes inspired by Central Europe.
+        </p> -->  
+      </div>
+    </div>
+  </section>
+
+
+  <!-- El resto del sitio — sin cambios -->
+    <section id="servicios">
+    <p class="section-label rv" data-i18n="liveLabel">Live Performance</p>
+    <h2 class="rv rv-d1" data-i18n="serviciosTitle">Musik fur <em>jeden Anlass</em></h2>
+    <div class="divider rv rv-d2"></div>
+    <p class="rv rv-d2" style="max-width:580px; color:var(--text-soft); line-height:1.8; margin-bottom:0;" data-i18n="serviciosSub">
+     Live-Musik für jeden Anlass: authentisch, flexibel, unvergesslich
+    </p>
+    <div class="servicios-grid">
+      <article class="s-card rv rv-d1"><h3 data-i18n="s1Title">Bars & Restaurants</h3><p data-i18n="s1Text">Musik, die zum Genießen, Tanzen und Mitsingen einlädt bringt Gäste zusammen</p></article>
+      <article class="s-card rv rv-d2"><h3 data-i18n="s2Title">Privatfeiern</h3><p data-i18n="s2Text">Mit Live-Musik werden Geburtstag, Familienfeier oder Jubiläum zu einem echten Highlight</p></article>
+      <article class="s-card rv rv-d3"><h3 data-i18n="s3Title">Festivals & Stages</h3><p data-i18n="s3Text">Mit Bühnenenergie, die das Publikum bewegt</p></article>
+      <article class="s-card rv rv-d3"><h3 data-i18n="s4Title">Firmenfeiern & Events</h3><p data-i18n="s4Text">Mit Live-Musik schaffen Sie unvergessliche Momente für Ihre Teams und Kunden</p></article>
+    </div>
+  </section>
+
+  <section id="repertorio">
+    <p class="section-label rv" data-i18n="repLabel">Repertoire</p>
+    <h2 class="rv rv-d1" data-i18n="repTitle">Live-Auftritt</h2>
+    <div class="divider rv rv-d1"></div>
+    <div class="rep-layout">
+      <div class="rep-sticky">
+        <div class="rep-pillars rv rv-d2">
+          <div class="rep-pillar">
+            <div>
+              <p class="rep-pillar-title"><span class="rep-pillar-icon">♩</span><span data-i18n="pillar1Title">Musikstil</span></p>
+              <p class="rep-pillar-text" data-i18n="pillar1Text">Indie, Folk, Pop, Rock & Singer-Songwriter — Covers und eigene Songs</p>
+            </div>
+          </div>
+          <div class="rep-pillar">
+            <div>
+              <p class="rep-pillar-title"><span class="rep-pillar-icon">◈</span><span data-i18n="pillar2Title">Equipment</span></p>
+              <p class="rep-pillar-text" data-i18n="pillar2Text">Gitarre, Looper, professionelle PA-Anlage — von unplugged bis vollverstärkt</p>
+            </div>
+          </div>
+          <div class="rep-pillar">
+            <div>
+              <p class="rep-pillar-title"><span class="rep-pillar-icon">◎</span><span data-i18n="pillar3Title">Flexibilität</span></p>
+              <p class="rep-pillar-text" data-i18n="pillar3Text">Set-Dauer und Repertoire individuell anpassbar — Songwünsche willkommen</p>
+            </div>
+          </div>
+          <div class="rep-pillar">
+            <!-- <div>
+              <p class="rep-pillar-title"><span class="rep-pillar-icon">✦</span><span data-i18n="pillar4Title">Format</span></p>
+              <p class="rep-pillar-text" data-i18n="pillar4Text">Solo-Auftritt — ideal für intime Bühnen bis zu mittelgroßen Veranstaltungen</p>
+            </div> -->
+          </div>
+        </div>
+        <blockquote class="rep-note rv rv-d2" data-i18n="repNote">Have a special song in mind? Get in touch and we'll make it happen.</blockquote>
+        <div class="rv rv-d3"><a href="#contact" class="btn btn-outline" data-i18n="repCta">Request full setlist</a></div>
+      </div>
+    </div>
+  </section>
+
+ <section id="music">
+    <p class="section-label" data-i18n="discography">Discography</p>
+    <h2 data-i18n="music">Music</h2>
+    <div class="divider"></div>
+    <div class="music-grid">
+      <div class="track-card">
+        <iframe src="https://open.spotify.com/embed/track/6Fq4DmvJcsZz1ywPR0eYbF?utm_source=generator"
+          height="152" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        <div class="track-info">
+          <div class="track-title">Heading Out</div>
+          <div class="track-meta">Single · 2025</div>
+        </div>
+      </div>
+      <div class="track-card">
+        <iframe src="https://open.spotify.com/embed/track/1SypeqKAoQHPeNFh4oejbU?utm_source=generator"
+          height="152" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        <div class="track-info">
+          <div class="track-title">Catch The Ride</div>
+          <div class="track-meta">Single · 2025</div>
+        </div>
+      </div>
+      <div class="track-card">
+        <iframe src="https://open.spotify.com/embed/track/1qgeUpsmSzLMVJacDLlB7W?utm_source=generator"
+          height="152" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        <div class="track-info">
+          <div class="track-title">Got A Feeling</div>
+          <div class="track-meta">Single · 2025</div>
+        </div>
+      </div>
+    </div>
+
+    <iframe src="https://open.spotify.com/embed/artist/5jJbUvjXngPY0l676sx9o9?utm_source=generator"
+      height="352" frameborder="0" allowfullscreen loading="lazy"
+      style="width:100%; margin-top:2rem; border-radius:12px;"></iframe>
+
+  </section>
+
+  <section id="videos">
+    <p class="section-label" data-i18n="visual">Visual</p>
+    <h2 data-i18n="videos">Videos</h2>
+    <div class="divider"></div>
+    <div class="videos-grid">
+      <div class="video-card">
+        <iframe id="yt-player-1" width="560" height="315" src="https://www.youtube.com/embed/ZXXaBeXzR88?si=EZ4oZ8S_-kQ9oPBI&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-caption">
+          <div class="video-title">Official Video</div>
+          <div class="video-meta">Tyrol · Austria</div>
+        </div>
+      </div>
+      <div class="video-card">
+       <iframe id="yt-player-2" width="560" height="315" src="https://www.youtube.com/embed/-y1u0v4qzKI?si=m6DrX0H7h5IZ5uZw&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-caption">
+          <div class="video-title">Acoustic Session</div>
+          <div class="video-meta">Mountain River Session</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <div class="galeria-header">
+      <p class="section-label rv" data-i18n="momentsLabel">Momente</p>
+      <h2 class="rv rv-d1" data-i18n="momentsTitle">Live <em>Erinnerungen</em></h2>
+      <div class="divider rv rv-d2"></div>
+    </div>
+    <div class="carousel-wrap">
+      <button class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">&#10094;</button>
+      <button class="carousel-btn next" id="carouselNext" aria-label="Siguiente">&#10095;</button>
+      <div class="carousel-track" id="carouselTrack">
+        <div class="c-item"><img src="img/examp2.png" alt="Tyrol 2024" loading="lazy"><div class="c-overlay"><span class="c-label">Tyrol Sessions · 2024</span></div></div>
+        <div class="c-item"><img src="img/Laidback Lory--3.jpg" alt="Vienna Stage" loading="lazy"><div class="c-overlay"><span class="c-label">Vienna Stage · Jan 2025</span></div></div>
+        <div class="c-item"><img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&q=80" alt="Mountain River" loading="lazy"><div class="c-overlay"><span class="c-label">Mountain River Session</span></div></div>
+        <div class="c-item"><img src="https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?w=800&q=80" alt="Innsbruck" loading="lazy"><div class="c-overlay"><span class="c-label">Acoustic Set · Innsbruck</span></div></div>
+        <div class="c-item"><img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&q=80" alt="Festival" loading="lazy"><div class="c-overlay"><span class="c-label">Outdoor Festival · Summer</span></div></div>
+        <div class="c-item"><img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&q=80" alt="Studio" loading="lazy"><div class="c-overlay"><span class="c-label">Studio Day · 2024</span></div></div>
+        <!-- duplicados-->
+        <div class="c-item" aria-hidden="true"><img src="img/examp2.png" alt="" loading="lazy"><div class="c-overlay"><span class="c-label">Tyrol Sessions · 2024</span></div></div>
+        <div class="c-item" aria-hidden="true"><img src="img/Laidback Lory-4308 1.jpg" alt="" loading="lazy"><div class="c-overlay"><span class="c-label">Vienna Stage · Jan 2025</span></div></div>
+        <div class="c-item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&q=80" alt="" loading="lazy"><div class="c-overlay"><span class="c-label">Mountain River Session</span></div></div>
+        <div class="c-item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?w=800&q=80" alt="" loading="lazy"><div class="c-overlay"><span class="c-label">Acoustic Set · Innsbruck</span></div></div>
+        <div class="c-item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&q=80" alt="" loading="lazy"><div class="c-overlay"><span class="c-label">Outdoor Festival · Summer</span></div></div>
+        <div class="c-item" aria-hidden="true"><img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&q=80" alt="" loading="lazy"><div class="c-overlay"><span class="c-label">Studio Day · 2024</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+      <p class="section-label" data-i18n="followAlong">Folgen</p>
+      <h2 data-i18n="connect">kontaktieren</h2>
+      <div class="divider" style="margin-left:auto; margin-right:auto;"></div>
+      <p data-i18n="connectText" style="max-width:600px; line-height:1.8; color:var(--text-soft); margin-bottom:2rem;">
+        Folge Laidback Lory auf allen Plattformen fur neue Veroffentlichungen, live Sessions, Geschichten und Momente.
+      </p>
+      <div class="social-buttons">
+        <a href="https://wa.me/43000000000?text=Hi%20Lory!%20I%27d%20like%20to%20book%20a%20show." target="_blank" rel="noopener" class="btn btn-primary">WhatsApp</a>
+        <a href="mailto:hello@laidbacklory.com" class="btn btn-outline">Email</a>
+        <a href="https://instagram.com/" target="_blank" class="btn btn-outline">Instagram</a>
+        <a href="https://spotify.com/"   target="_blank" class="btn btn-outline">Spotify</a>
+        <a href="https://youtube.com/"   target="_blank" class="btn btn-outline">YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Laidback Lory — Tirol, Austria</p>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('v'); });
+    }, { threshold: .1 });
+    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+    const translations = {
+      en: {
+music: "Music",
+videos: "Videos",
+about: "About Me",
+contact: "Contact",
+navMoments: "Moments",
+navLive: "Live",
+
+heroTag: "Austrian Indie / Folk Soul",
+heroSub: "Live musician and songwriter from Tyrol.<br> Real music, real energy, real connections.",
+
+listen: "Listen Now",
+bookShow: "Book a Show",
+
+discography: "Discography",
+visual: "Visual",
+
+artist: "The Artist",
+aboutTitle: "About Me",
+
+about1: "I'm Lorenz – a live musician and songwriter from Tyrol. Music has been part of my life since early childhood. Through years of playing in various bands and music projects, I've learned that genuine emotions arise when artists and audiences truly connect.<br>Through my music, I express my experiences and the spirit of travel, shaped by meaningful encounters and lasting impressions.<br>I believe music thrives on authenticity and the energy created in the moment.<br>For all kinds of celebrations and events, I adapt my set flexibly to match the atmosphere of the occasion.",
+
+about2: "",
+
+momentsLabel: "Moments",
+momentsTitle: "Live Memories",
+
+liveLabel: "Live Performance",
+serviciosTitle: "Music for Every Occasion",
+serviciosSub: "Live music for every occasion: authentic, flexible, unforgettable.",
+
+s1Title: "Bars & Restaurants",
+s1Text: "Music that invites people to enjoy, dance, and sing along, bringing guests together.",
+
+s2Title: "Private Celebrations",
+s2Text: "Live music turns birthdays, family celebrations, and anniversaries into truly memorable highlights.",
+
+s3Title: "Festivals & Stages",
+s3Text: "With stage energy that moves and engages the audience.",
+
+s4Title: "Corporate Events",
+s4Text: "Live music creates unforgettable moments for your teams and clients.",
+
+repLabel: "Repertoire",
+repTitle: "Live Performance",
+
+pillar1Title: "Music Style",
+pillar1Text: "Pop, Rock, Indie, Folk, Singer-Songwriter",
+pillar2Title: "Setlist",
+pillar2Text: "Well-known covers and original songs. Happy to discuss song requests in advance!",
+pillar3Title: "Sound & Equipment",
+pillar3Text: "From unplugged to fully amplified. Professional PA system available and flexibly deployable.",
+pillar4Title: "Flexible Line-up",
+pillar4Text: "Solo acoustic, duo or band — depending on the event and desired atmosphere.",
+
+repNote: "Have a special song in mind? Get in touch and we'll make it happen.",
+repCta: "Request Full Setlist",
+
+followAlong: "Follow Along",
+connect: "Contact",
+
+connectText: "Follow Laidback Lory across all platforms for new releases, live sessions, stories and memorable moments.<br><br>📞 Phone: +43 XXX XXX XXXX<br>✉️ Email: info@laidbacklory.com",
+},
+
+      es: {
+music: "Música",
+videos: "Videos",
+about: "Sobre mí",
+contact: "Contacto",
+navMoments: "Momentos",
+navLive: "En Vivo",
+
+heroTag: "Indie / Folk Soul Austríaco",
+heroSub: "Músico en vivo y cantautor de Tirol.<br> Música auténtica, energía auténtica y encuentros genuinos.",
+
+listen: "Escuchar",
+bookShow: "Reservar Show",
+
+discography: "Discografía",
+visual: "Visual",
+
+artist: "El Artista",
+aboutTitle: "Sobre mí",
+
+about1: "Soy Lorenz, músico en vivo y cantautor de Tirol. La música me acompaña desde mi más temprana infancia. Tras años tocando en diferentes bandas y proyectos musicales, aprendí que las emociones más auténticas surgen cuando artistas y público se encuentran.<br>A través de mi música expreso mis experiencias y el espíritu de los viajes, marcados por encuentros interesantes e impresiones inolvidables.<br>Creo que la música vive de la autenticidad y de la energía que se crea en el momento.<br>Para todo tipo de celebraciones y eventos adapto mi repertorio de forma flexible a la atmósfera de cada ocasión.",
+
+about2: "",
+
+momentsLabel: "Momentos",
+momentsTitle: "Recuerdos en Vivo",
+
+liveLabel: "Actuación en Vivo",
+serviciosTitle: "Música para Cada Ocasión",
+serviciosSub: "Música en vivo para cualquier ocasión: auténtica, flexible e inolvidable.",
+
+s1Title: "Bares y Restaurantes",
+s1Text: "Música que invita a disfrutar, bailar y cantar juntos, creando momentos especiales entre los invitados.",
+
+s2Title: "Celebraciones Privadas",
+s2Text: "Con música en vivo, cumpleaños, reuniones familiares o aniversarios se convierten en momentos realmente memorables.",
+
+s3Title: "Festivales y Escenarios",
+s3Text: "Con una energía escénica que conecta y emociona al público.",
+
+s4Title: "Eventos Corporativos",
+s4Text: "La música en vivo crea momentos inolvidables para equipos, clientes e invitados.",
+
+repLabel: "Repertorio",
+repTitle: "Actuación en Vivo",
+
+pillar1Title: "Estilo Musical",
+pillar1Text: "Pop, Rock, Indie, Folk, Cantautor",
+pillar2Title: "Setlist",
+pillar2Text: "Versiones conocidas y canciones propias. ¡Con gusto hablamos de peticiones con antelación!",
+pillar3Title: "Sonido y Equipamiento",
+pillar3Text: "Desde acústico hasta totalmente amplificado. Sistema PA profesional disponible y de uso flexible.",
+pillar4Title: "Formación Flexible",
+pillar4Text: "Solo acústico, dúo o banda — según el evento y el ambiente deseado.",
+
+repNote: "¿Tienes una canción especial en mente? Ponte en contacto y la haremos realidad.",
+repCta: "Solicitar Repertorio Completo",
+
+followAlong: "Sígueme",
+connect: "Contacto",
+
+connectText: "Sigue a Laidback Lory en todas las plataformas para descubrir nuevos lanzamientos, sesiones en vivo, historias y momentos especiales.<br><br>📞 Teléfono: +43 XXX XXX XXXX<br>✉️ Email: info@laidbacklory.com",
+},
+
+     de: {
+music: "Musik",
+videos: "Videos",
+about: "Über mich",
+contact: "Kontaktieren",
+navMoments: "Momente",
+navLive: "Anlässe",
+
+heroTag: "Pop, Rock, Indie",
+heroSub: "Livemusiker und Songwriter aus Tirol.<br> Echte Musik, echte Energie, echte Begegnungen.",
+
+listen: "Jetzt anhören",
+bookShow: "Auftritt buchen",
+
+discography: "Diskografie",
+visual: "Visuell",
+
+artist: "Der Künstler",
+aboutTitle: "Über mich",
+
+about1: "Ich bin Lorenz – Livemusiker und Songwriter aus Tirol. Musik begleitet mich schon seit frühster Kindheit. Durch Jahre in verschiedensten Bands und Musikprojekten habe ich gelernt, dass echte Emotionen in dem Moment entstehen, wenn Künstler und Publikum sich begegnen.<br>Durch die Musik drücke ich meine Erfahrungen und das Lebensgefühl vom Reisen aus, das von interessanten Begegnungen und Eindrücken geprägt ist.<br>Musik lebt meiner Meinung nach nämlich von Authentizität und der unmittelbaren Energie.<br>Für verschiedenste Feiern und Events passe ich mein Set flexibel an die Atmosphäre vor Ort an.",
+
+about2: "",
+
+momentsLabel: "Momente",
+momentsTitle: "Live Erinnerungen",
+
+liveLabel: "Live Performance",
+serviciosTitle: "Musik für jeden Anlass",
+serviciosSub: "Live-Musik für jeden Anlass: authentisch, flexibel, unvergesslich.",
+
+s1Title: "Bars & Restaurants",
+s1Text: "Musik, die zum Genießen, Tanzen und Mitsingen einlädt, bringt Gäste zusammen",
+
+s2Title: "Privatfeiern",
+s2Text: "Bei Geburtstag, Hochzeit, Familienfeier oder Jubiläum werden mit Live-Musik Momente verewigt",
+
+s3Title: "Festivals & Stages",
+s3Text: "Mit Bühnenenergie, die das Publikum bewegt",
+
+s4Title: "Firmenfeiern & Events",
+s4Text: "Mit Live-Musik schaffen Sie unvergessliche Momente für Ihre Teams und Kunden",
+
+repLabel: "Repertoire",
+repTitle: "Live-Auftritt",
+
+pillar1Title: "Musikstil",
+pillar1Text: "Pop, Rock, Indie, Folk, Singer Songwriter",
+
+pillar2Title: "Setlist",
+pillar2Text: "Bekannte Covers und eigene Songs. Gerne besprechen wir Songwunsche im Vorfeld!",
+
+pillar3Title: "Sound und Technik",
+pillar3Text: "Von unplugged bis vollständig verstärkt. Professionelle Anlage vorhanden und flexibel einsetzbar.",
+
+pillar4Title: "Flexible Besetzung",
+pillar4Text: "Solo-Akustik, Duo oder Band - je nach Veranstaltung und gewunschter Atmosphäre.",
+
+repNote: "Hast du einen besonderen Song im Kopf? Melde dich und wir machen es möglich.",
+repCta: "Vollständige Setlist anfragen",
+
+followAlong: "Folgen",
+connect: "Kontaktieren",
+
+connectText: "Folge Laidback Lory auf allen Plattformen für neue Veröffentlichungen, Live Sessions, Geschichten und Momente.<br><br>📞 Telefon: +43 XXX XXX XXXX<br>✉️ E-Mail: info@laidbacklory.com",
+}
+    };
+
+    function setLanguage(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang]?.[key]) el.innerHTML = translations[lang][key];
+      });
+      localStorage.setItem('language', lang);
+    }
+
+    // ── Menú hamburguesa ─────────────────────────────────────
+    const hamburger = document.getElementById('navHamburger');
+    const navRight  = document.getElementById('navRight');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navRight.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navRight.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+        document.body.style.overflow = '';
+      });
+    });
+
+    const switcher = document.getElementById('languageSwitcher');
+    switcher.addEventListener('change', e => setLanguage(e.target.value));
+    const saved = 'de';
+    switcher.value = saved;
+    setLanguage(saved);
+
+    // ── YouTube: un solo video a la vez ──────────────────────
+    // La API de YouTube llama a onYouTubeIframeAPIReady cuando está lista
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(tag);
+
+    let ytPlayers = [];
+
+    window.onYouTubeIframeAPIReady = function() {
+      ['yt-player-1', 'yt-player-2'].forEach(id => {
+        const player = new YT.Player(id, {
+          events: {
+            onStateChange: function(event) {
+              // Si este video empieza a reproducirse, pausar todos los demás
+              if (event.data === YT.PlayerState.PLAYING) {
+                ytPlayers.forEach(p => {
+                  if (p !== event.target) p.pauseVideo();
+                });
+              }
+            }
+          }
+        });
+        ytPlayers.push(player);
+      });
+    };
+
+    // ── Carrusel: botones ❮ ❯ con bucle infinito ─────────────
+    const track       = document.getElementById('carouselTrack');
+    const btnPrev     = document.getElementById('carouselPrev');
+    const btnNext     = document.getElementById('carouselNext');
+    const STEP        = 360;   // px por click
+    const RESUME_DELAY = 3000; // ms sin tocar → retoma auto-scroll
+    let manualOffset  = 0;
+    let resumeTimer   = null;
+    let isPaused      = false;
+
+    // Ancho del set original (la mitad del track, ya que hay duplicados)
+    // Lo calculamos después de que cargue el DOM
+    function getHalfWidth() {
+      return track.scrollWidth / 2;
+    }
+
+    // Normaliza el offset para que siempre esté dentro del rango del set original
+    // Así nunca se sale de las imágenes y el bucle es invisible
+    function normalizeOffset(offset) {
+      const half = getHalfWidth();
+      // Si se fue demasiado a la derecha (prev excesivo), salta al espejo izquierdo
+      if (offset > 0) return offset - half;
+      // Si se fue demasiado a la izquierda (next excesivo), salta al espejo derecho
+      if (offset < -half) return offset + half;
+      return offset;
+    }
+
+    function freezeTrack() {
+      if (isPaused) return;
+      isPaused = true;
+      const matrix = window.getComputedStyle(track).transform;
+      const curX   = matrix === 'none' ? 0 : parseFloat(matrix.split(',')[4]);
+      manualOffset = normalizeOffset(curX);
+      track.style.animation = 'none';
+      track.style.transform = `translateX(${manualOffset}px)`;
+    }
+
+    function scheduleResume() {
+      clearTimeout(resumeTimer);
+      resumeTimer = setTimeout(() => {
+        isPaused = false;
+        track.style.transform = '';
+        track.style.animation  = '';
+      }, RESUME_DELAY);
+    }
+
+    btnNext.addEventListener('click', () => {
+      freezeTrack();
+      manualOffset = normalizeOffset(manualOffset - STEP);
+      track.style.transform = `translateX(${manualOffset}px)`;
+      scheduleResume();
+    });
+
+    btnPrev.addEventListener('click', () => {
+      freezeTrack();
+      manualOffset = normalizeOffset(manualOffset + STEP);
+      track.style.transform = `translateX(${manualOffset}px)`;
+      scheduleResume();
+    });
+  </script>
+
+</body>
+</html>
