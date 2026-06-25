@@ -276,7 +276,7 @@ Echte Musik, echte Energie, echte Begegnungen
     <div class="divider"></div>
     <div class="music-grid">
       <div class="track-card">
-        <iframe src="https://open.spotify.com/embed/track/6Fq4DmvJcsZz1ywPR0eYbF?utm_source=generator"
+        <iframe data-src="https://open.spotify.com/embed/track/6Fq4DmvJcsZz1ywPR0eYbF?utm_source=generator"
           height="152" frameborder="0" allowfullscreen loading="lazy"></iframe>
         <div class="track-info">
           <div class="track-title">Heading Out</div>
@@ -284,7 +284,7 @@ Echte Musik, echte Energie, echte Begegnungen
         </div>
       </div>
       <div class="track-card">
-        <iframe src="https://open.spotify.com/embed/track/1SypeqKAoQHPeNFh4oejbU?utm_source=generator"
+        <iframe data-src="https://open.spotify.com/embed/track/1SypeqKAoQHPeNFh4oejbU?utm_source=generator"
           height="152" frameborder="0" allowfullscreen loading="lazy"></iframe>
         <div class="track-info">
           <div class="track-title">Catch The Ride</div>
@@ -292,7 +292,7 @@ Echte Musik, echte Energie, echte Begegnungen
         </div>
       </div>
       <div class="track-card">
-        <iframe src="https://open.spotify.com/embed/track/1qgeUpsmSzLMVJacDLlB7W?utm_source=generator"
+        <iframe data-src="https://open.spotify.com/embed/track/1qgeUpsmSzLMVJacDLlB7W?utm_source=generator"
           height="152" frameborder="0" allowfullscreen loading="lazy"></iframe>
         <div class="track-info">
           <div class="track-title">Got A Feeling</div>
@@ -301,7 +301,7 @@ Echte Musik, echte Energie, echte Begegnungen
       </div>
     </div>
 
-    <iframe src="https://open.spotify.com/embed/artist/5jJbUvjXngPY0l676sx9o9?utm_source=generator"
+    <iframe data-src="https://open.spotify.com/embed/artist/5jJbUvjXngPY0l676sx9o9?utm_source=generator"
       height="352" frameborder="0" allowfullscreen loading="lazy"
       style="width:100%; margin-top:2rem; border-radius:12px;"></iframe>
 
@@ -313,17 +313,17 @@ Echte Musik, echte Energie, echte Begegnungen
     <div class="divider"></div>
     <div class="videos-grid">
       <div class="video-card">
-        <iframe id="yt-player-1" width="560" height="315" src="https://www.youtube.com/embed/ZXXaBeXzR88?si=EZ4oZ8S_-kQ9oPBI&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe id="yt-player-1" width="560" height="315" data-src="https://www.youtube.com/embed/ZXXaBeXzR88?si=EZ4oZ8S_-kQ9oPBI&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="video-caption">
           <div class="video-title">Official Video</div>
           <div class="video-meta">Tyrol · Austria</div>
         </div>
       </div>
       <div class="video-card">
-       <iframe id="yt-player-2" width="560" height="315" src="https://www.youtube.com/embed/-y1u0v4qzKI?si=m6DrX0H7h5IZ5uZw&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <iframe id="yt-player-2" width="560" height="315" data-src="https://www.youtube.com/embed/-y1u0v4qzKI?si=m6DrX0H7h5IZ5uZw&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="video-caption">
-          <div class="video-title">Acoustic Session</div>
-          <div class="video-meta">Mountain River Session</div>
+          <div class="video-title">Live Show</div>
+          <div class="video-meta">Tyrol · Austria</div>
         </div>
       </div>
     </div>
@@ -726,16 +726,23 @@ connectText: "Folge Laidback Lory auf allen Plattformen für neue Veröffentlich
 
 <script>
   function acceptCookies() {
-    localStorage.setItem('cookieConsent', 'accepted');
-    document.getElementById('cookieBanner').style.display = 'none';
-  }
-  function declineCookies() {
-    localStorage.setItem('cookieConsent', 'declined');
-    document.getElementById('cookieBanner').style.display = 'none';
-  }
-  if (!localStorage.getItem('cookieConsent')) {
-    document.getElementById('cookieBanner').style.display = 'block';
-  }
+  localStorage.setItem('cookieConsent', 'accepted');
+  document.getElementById('cookieBanner').style.display = 'none';
+  document.querySelectorAll('iframe[data-src]').forEach(iframe => {
+    iframe.src = iframe.getAttribute('data-src');
+  });
+}
+function declineCookies() {
+  localStorage.setItem('cookieConsent', 'declined');
+  document.getElementById('cookieBanner').style.display = 'none';
+}
+if (localStorage.getItem('cookieConsent') === 'accepted') {
+  document.querySelectorAll('iframe[data-src]').forEach(iframe => {
+    iframe.src = iframe.getAttribute('data-src');
+  });
+} else if (!localStorage.getItem('cookieConsent')) {
+  document.getElementById('cookieBanner').style.display = 'block';
+}
 </script>
 
 </body>
