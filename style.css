@@ -185,11 +185,23 @@ nav {
 .nav-links a:hover { color: var(--mustard); }
 
 #languageSwitcher {
-  background: rgba(255,255,255,0.6);
+  background: transparent;
   color: var(--text-dark);
-  border: 1px solid rgba(0,0,0,0.08);
-  padding: 0.5rem;
-  border-radius: 6px;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding: 0.4rem 0.2rem;
+  border-radius: 0;
+  font-family: var(--font-body);
+  font-size: var(--size-nav-links);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+#languageSwitcher:focus {
+  outline: none;
+  border-bottom-color: var(--mustard);
 }
 
 /* ── Hamburguesa — oculta en desktop ── */
