@@ -764,6 +764,9 @@ footer p { color: var(--text-soft); font-size: 0.75rem; }
   .btn         { width: 100%; text-align: center; }
   .servicios-grid { grid-template-columns: 1fr; }
 
+   /* Hero tag más pequeño en mobile */
+  .hero-tag { font-size: 1rem; }
+
   /* Fotos del carrusel en móvil — usa las variables definidas arriba */
   .c-item {
     width: var(--carousel-item-width-mobile);
