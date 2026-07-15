@@ -1,0 +1,11 @@
+# robots.txt — le indica a los buscadores (Google, Bing, etc.) cómo rastrear este sitio.
+# Más info: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+
+# Aplica a todos los bots/crawlers, sin excepción
+User-agent: *
+
+# Permite el rastreo de todo el sitio (no se bloquea ninguna sección)
+Allow: /
+
+# Ubicación del sitemap, para que los bots sepan qué páginas existen sin tener que descubrirlas solas
+Sitemap: https://www.laidbacklory.com/sitemap.xml

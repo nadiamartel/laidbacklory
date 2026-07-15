@@ -8,10 +8,8 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
 
-    <!-- Las 3 versiones de idioma -->
+    <!-- Idioma principal: alemán. Se agregarán más entradas cuando existan rutas /en/ /es/ reales -->
     <xhtml:link rel="alternate" hreflang="de" href="https://www.laidbacklory.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.laidbacklory.com/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.laidbacklory.com/?lang=es"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.laidbacklory.com/"/>
   </url>
 
